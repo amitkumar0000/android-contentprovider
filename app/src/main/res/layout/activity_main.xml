@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/input"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/name"
+            android:text="name"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/rollno"
+            android:text="0"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/insert"
+       android:layout_below="@id/input"
+       android:text="insert"
+       android:layout_marginLeft="5dp"
+       android:onClick="onClick"
+       />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+        android:id="@+id/query"
+        android:text="query"
+        android:layout_toRightOf="@id/insert"
+        android:onClick="onClick"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+        android:id="@+id/update"
+        android:layout_toRightOf="@id/query"
+        android:text="update"
+        android:onClick="onClick"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+
+        android:id="@+id/delete"
+        android:layout_toRightOf="@id/update"
+        android:text="delete"
+        android:onClick="onClick"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:layout_below="@id/insert"
+        android:text="Student DB Content"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">android-content-provider</string>
+    <string name="provider_permission">com.android.permission.studentprovider</string>
+</resources>
